@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: #111;
+  color: white;
+  padding: 20px 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffd700;
+}
+
+.botao-loja {
+  background-color: #ff1800;
+  color: #111;
+  padding: 6px 14px;
+  border-radius: 4px;
+}
+
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.produtos-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.img {
+  margin-top: 100px;
+  width: 400px;
+  height: 200px;
+}
+
+.sobre-container {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  flex-wrap: wrap; /* Responsivo */
+  gap: 40px;
+}
+
+.sobre-imagem {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 400px;
+  border-radius: 12px;
+}
+
+.sobre-texto {
+  margin-top: -300px;
+  flex: 1 1 500px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* RESPONSIVIDADE PARA TABLETS E CELULARES */
+@media (max-width: 991px) {
+  nav ul {
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botao-loja {
+    margin-top: 10px;
+  }
+
+  .sobre-container {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .sobre-texto {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
+
+  .produtos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 1.6em;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 160px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobre-texto {
+    font-size: 0.95rem;
+  }
+
+  .botao-loja {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  nav ul {
+    gap: 8px;
+  }
+
+  nav {
+    padding: 10px 20px;
+  }
+
+  header {
+    padding: 15px 20px;
+  }
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: inherit;
+    transition: background-color 0.3s ease;
+  }
+
+  .whatsapp-btn:hover {
+    background-color: #1ebe5d;
+    text-decoration: none;
+  }
+
+  .whatsapp-btn i {
+    margin-left: 8px;
+    font-size: 18px;
+  }
+
+  .contato {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .contato p {
+    margin: 5px 0;
+  }
+
+  .instagram-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: inherit;
+    transition: opacity 0.3s ease;
+  }
+
+  .instagram-btn:hover {
+    opacity: 0.85;
+    text-decoration: none;
+  }
+
+  .instagram-btn i {
+    margin-left: 8px;
+    font-size: 18px;
+  }
+
+  .contato {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .contato p {
+    margin: 10px 0;
+  }
+
+  .insta-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-image: none;
+  }
+
+  .insta-link:hover {
+    background-image: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .email-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #0072c6; /* azul profissional */
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: inherit;
+    transition: background-color 0.3s ease;
+  }
+
+  .email-btn:hover {
+    background-color: #005fa3;
+    text-decoration: none;
+  }
+
+  .email-btn i {
+    margin-left: 8px;
+    font-size: 18px;
+  }
+
+  header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+/* BARRA DE NAVEGAÇÃO MOBILE*/
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #111;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+  .nav-list.show {
+    display: flex;
+    
+  }
+
+  nav {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul li a {
+    font-size: 1.1rem;
+  }
+}
+
+
+.sobre-imagem {
+  margin-top: 30px;
+  width: 280px;           /* tamanho ideal para desktop */
+  max-width: 100%;        /* garante responsividade */
+  height: auto;
+  flex: 1 1 350px;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .sobre-imagem {
+    margin-top: 60px;
+    width: 200px;          /* ocupa toda a largura disponível em telas menores */
+    max-width: 100%;      /* garante que não ultrapasse a largura do container */
+    height: auto;         /* mantém a proporção da imagem */
+  }
+}
