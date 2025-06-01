@@ -368,7 +368,7 @@ footer {
 @media (max-width: 768px) {
   .sobre-imagem {
     margin-top: 60px;
-    width: 200px;          /* ocupa toda a largura disponível em telas menores */
+    width: 300px;          /* ocupa toda a largura disponível em telas menores */
     max-width: 100%;      /* garante que não ultrapasse a largura do container */
     height: auto;         /* mantém a proporção da imagem */
   }
